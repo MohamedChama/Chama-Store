@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="signup.css">
+
+    <title>test</title>
+</head>
+
+<body>
+
+    <div class="introduction">
+
+        <nav>
+            <div><a href="../index.html" class="previous round">‹</a></div>
+        </nav>
+
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+                <button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="../images/icon/fb2.png">
+                <img src="../images/icon/insta2.png">
+                <img src="../images/icon/tt2.png">
+            </div>
+
+
+            <form id="login" class="input-group" action="index.html">
+                <div class="inp">
+                    <img src="../images/icon/user.png"><input type="email" id="email" class="input-field"
+                        placeholder="email" style="width: 88%; border:none;" required="required">
+                </div>
+                <div class="inp">
+                    <img src="../images/icon/password.png"><input type="password" id="password" class="input-field"
+                        placeholder="Password" style="width: 88%; border: none;" required="required">
+                </div>
+                <input type="checkbox" class="check-box">Remember Password
+                <button type="submit"  class="submit-btn"><a href="../index.html">Log In</a></button>
+               
+            </form>
+
+
+            <div class="other" id="other">
+                <div class="instead">
+                    <h3>or</h3>
+                </div>
+                <button class="connect" onclick="google()">
+                    <img src="../images/icon/google.png"><span>Sign in with Google</span>
+                </button>
+            </div>
+
+
+
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Full Name" required="required" id="name">
+                <input type="email" class="input-field" placeholder="Email Address" required="required" id="emaill">
+                <input type="password" class="input-field" placeholder="Create Password" name="psame"
+                    required="required" id="pass">
+                <input type="password" class="input-field" placeholder="Confirm Password" name="psame"
+                    required="required" id="confpassword">
+                <input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms &
+                Conditions
+                <button type="submit" id="btnSubmit" onclick="chekpass()" class="submit-btn2 reg-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../src.js"></script>
+    <script src="signup.js"></script>
+
+</body>
+
+
+</html>
